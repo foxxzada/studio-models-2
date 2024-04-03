@@ -1,6 +1,5 @@
 'use client';
 import React, { use, useState } from 'react';
-import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
 
 export function LogoSlider() {
@@ -17,7 +16,7 @@ export function LogoSlider() {
 
   return (
     <div className="group flex space-x-16 overflow-hidden pt-14">
-      <div className="animate-loop-scroll flex justify-center space-x-16 group-hover:paused">
+      <div className="group-hover:paused flex animate-loop-scroll justify-center space-x-16">
         {logos.map((logo, index) => (
           <div key={index} className="items-center justify-center">
             <Image
@@ -31,7 +30,7 @@ export function LogoSlider() {
         ))}
       </div>
       <div
-        className="animate-loop-scroll flex justify-center space-x-16 group-hover:paused"
+        className="group-hover:paused flex animate-loop-scroll justify-center space-x-16"
         aria-hidden
       >
         {logos.map((logo, index) => (

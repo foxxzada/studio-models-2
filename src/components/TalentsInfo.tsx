@@ -1,15 +1,20 @@
+import TalentsCard from './TalentsCard';
 import Image from 'next/image';
 import React from 'react';
-import ModelsCategories from '../components/ModelsCategories';
 
 interface ImageProps {
   src: string;
   alt: string;
   title: string;
   details: {
+    category: string;
     age: string;
     height: string;
-    category: string;
+    bust: string;
+    waist: string;
+    hips: string;
+    dress: string;
+    shoe: string;
   };
 }
 
@@ -19,9 +24,14 @@ const images: ImageProps[] = [
     alt: 'Francine',
     title: 'Francine',
     details: {
+      category: 'Fashion Women',
       age: '25',
       height: '1.75',
-      category: 'Fashion',
+      bust: '80',
+      waist: '60',
+      hips: '90',
+      dress: '38',
+      shoe: '42',
     },
   },
   {
@@ -29,9 +39,14 @@ const images: ImageProps[] = [
     alt: 'Lucas',
     title: 'Lucas',
     details: {
+      category: 'Fashion Men',
       age: '25',
       height: '1.75',
-      category: 'Fashion',
+      bust: '80',
+      waist: '60',
+      hips: '90',
+      dress: '38',
+      shoe: '42',
     },
   },
   {
@@ -39,9 +54,14 @@ const images: ImageProps[] = [
     alt: 'Tainara',
     title: 'Tainara',
     details: {
+      category: 'Fashion Women',
       age: '25',
       height: '1.75',
-      category: 'Fashion',
+      bust: '80',
+      waist: '60',
+      hips: '90',
+      dress: '38',
+      shoe: '42',
     },
   },
   {
@@ -49,9 +69,14 @@ const images: ImageProps[] = [
     alt: 'Camila',
     title: 'Camila',
     details: {
+      category: 'Fashion Women',
       age: '25',
       height: '1.75',
-      category: 'Cast',
+      bust: '80',
+      waist: '60',
+      hips: '90',
+      dress: '38',
+      shoe: '42',
     },
   },
   {
@@ -59,9 +84,14 @@ const images: ImageProps[] = [
     alt: 'Augusto',
     title: 'Augusto',
     details: {
+      category: 'Fashion Men',
       age: '25',
       height: '1.75',
-      category: 'Cast',
+      bust: '80',
+      waist: '60',
+      hips: '90',
+      dress: '38',
+      shoe: '42',
     },
   },
   {
@@ -69,14 +99,19 @@ const images: ImageProps[] = [
     alt: 'Julia',
     title: 'Julia',
     details: {
+      category: 'Fashion Women',
       age: '25',
       height: '1.75',
-      category: 'Cast',
+      bust: '80',
+      waist: '60',
+      hips: '90',
+      dress: '38',
+      shoe: '42',
     },
   },
 ];
 
-const LightBox: React.FC = () => {
+const TalentsInfo: React.FC = () => {
   return (
     <section className="flex min-h-screen w-full items-start justify-center py-10">
       <div className="grid grid-cols-3 gap-6 pt-12">
@@ -87,7 +122,11 @@ const LightBox: React.FC = () => {
           >
             <Image src={img.src} alt={img.alt} width={300} height={300} />
             <div className="absolute left-0 top-0 flex h-full w-full flex-col justify-end bg-black bg-opacity-70 p-4 opacity-0 transition-opacity hover:opacity-100">
-              <ModelsCategories title={img.title} details={img.details} />
+              <TalentsCard
+                category={img.category}
+                title={img.title}
+                details={img.details}
+              />
             </div>
           </div>
         ))}
@@ -96,4 +135,4 @@ const LightBox: React.FC = () => {
   );
 };
 
-export default LightBox;
+export default TalentsInfo;

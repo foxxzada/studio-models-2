@@ -6,7 +6,7 @@ interface ModelsCategoriesProps {
   details: {
     age: string;
     height: string;
-    moreButton: string;
+    category: string;
   };
 }
 
@@ -23,7 +23,7 @@ const ModelsCategories: React.FC<ModelsCategoriesProps> = ({
       </div>
       <div className="flex justify-end p-4">
         <Button className="rounded-full bg-[#141414] p-2 text-sm font-bold text-white transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-white hover:text-[#141414]">
-          Explore {details.moreButton}
+          Explore {details.category}
         </Button>
       </div>
     </div>
