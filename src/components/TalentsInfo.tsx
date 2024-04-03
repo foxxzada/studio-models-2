@@ -122,11 +122,7 @@ const TalentsInfo: React.FC = () => {
           >
             <Image src={img.src} alt={img.alt} width={300} height={300} />
             <div className="absolute left-0 top-0 flex h-full w-full flex-col justify-end bg-black bg-opacity-70 p-4 opacity-0 transition-opacity hover:opacity-100">
-              <TalentsCard
-                category={img.category}
-                title={img.title}
-                details={img.details}
-              />
+              <TalentsCard title={img.title} details={img.details} />
             </div>
           </div>
         ))}
