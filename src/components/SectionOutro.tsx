@@ -7,6 +7,7 @@ import {
 import { Plus } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from './ui/button';
+import Link from 'next/link';
 
 export function SectionOutro() {
   return (
@@ -18,26 +19,23 @@ export function SectionOutro() {
         <h1 className="text-7xl font-bold text-black">With Us</h1>
       </div>
       <div className="flex items-center justify-center p-5">
-        <p className="flex justify-between">
+        <p className="flex justify-between gap-1">
           <InstagramLogoIcon className="mt-1" />
-          &nbsp;Instagram
+          <Link href="https://www.instagram.com/studiomodels_oficial/">
+            Instagram
+          </Link>
         </p>
         <PlusIcon className="mx-5" />
-        <p className="flex justify-between">
+        <p className="flex justify-between gap-1">
           <TwitterLogoIcon className="mt-1" />
-          &nbsp;Twitter
+          <Link href="https://www.instagram.com/studiomodels_oficial/">
+            Twitter
+          </Link>
         </p>
       </div>
       <div className="relative">
-        <Image
-          src="/models/francine.jpg"
-          alt="bg"
-          width={600}
-          height={600}
-          className="rounded mx-auto"
-        />
         <div className="absolute inset-0 flex items-center justify-center">
-          <Button className="rounded-full bg-green-500 p-3 text-2xl font-bold text-white transition-transform duration-300 ease-in-out hover:scale-110">
+          <Button className="rounded-full  p-3 text-2xl font-bold text-[#141414] transition-transform duration-300 ease-in-out hover:scale-110">
             Contact Us
             <ArrowTopRightIcon className=" ml-2 h-4 w-4 rounded-full" />
           </Button>

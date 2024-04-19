@@ -21,7 +21,7 @@ const images: ImageProps[] = [
     details: {
       age: '25',
       height: '1.75',
-      category: 'Fashion',
+      category: 'Models',
     },
   },
   {
@@ -31,7 +31,7 @@ const images: ImageProps[] = [
     details: {
       age: '25',
       height: '1.75',
-      category: 'Fashion',
+      category: 'Models',
     },
   },
   {
@@ -41,7 +41,7 @@ const images: ImageProps[] = [
     details: {
       age: '25',
       height: '1.75',
-      category: 'Fashion',
+      category: 'Models',
     },
   },
   {
@@ -83,7 +83,7 @@ const LightBox: React.FC = () => {
         {images.map((img, index) => (
           <div
             key={index}
-            className="relative overflow-hidden rounded transition-transform duration-500 ease-in-out hover:scale-110"
+            className="relative overflow-hidden transition-transform duration-500 ease-in-out hover:scale-110"
           >
             <Image src={img.src} alt={img.alt} width={300} height={300} />
             <div className="absolute left-0 top-0 flex h-full w-full flex-col justify-end bg-black bg-opacity-70 p-4 opacity-0 transition-opacity hover:opacity-100">

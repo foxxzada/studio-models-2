@@ -10,14 +10,14 @@ export default function Navbar() {
   const menus = [
     { title: 'Home', path: '/' },
     { title: 'Models', path: '/models' },
-    { title: 'Cast', path: '/cast' },
-    { title: 'Contact Us', path: '/contact' },
+    { title: 'Cast', path: '/models' }, // Create cast page and change this path to '/cast'
+    { title: 'Contact Us', path: '/' }, // create contact us page and change this path to '/contact-us'
   ];
 
   return (
     <nav className="w-full border-b bg-white md:border-0">
       <div className="mx-auto max-w-screen-xl items-center px-4 md:flex md:px-8">
-        <div className="flex items-center justify-between py-3 md:block md:py-5">
+        <div className="flex items-center justify-between py-3 md:block md:py-1">
           <Link href="/">
             <h1 className="text-2xl font-bold text-black">Studio Models</h1>
           </Link>
@@ -39,7 +39,7 @@ export default function Navbar() {
             {menus.map((item, idx) => (
               <li
                 key={idx}
-                className="rounded p-1 font-bold text-black hover:bg-[#141414] hover:text-white"
+                className="border-[#141414] p-1 font-bold text-black hover:border-b-2"
               >
                 <Link href={item.path}>{item.title}</Link>
               </li>

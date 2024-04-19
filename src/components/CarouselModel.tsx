@@ -45,13 +45,7 @@ const CarouselModel: React.FC<Props> = ({ images, autoplay }: Props) => {
           <CarouselItem key={index}>
             <Card className="pt-5">
               <CardContent>
-                <Image
-                  src={image}
-                  alt="hero"
-                  width={480}
-                  height={480}
-                  className="md:rounded-lg"
-                />
+                <Image src={image} alt="hero" width={480} height={480} />
               </CardContent>
             </Card>
           </CarouselItem>

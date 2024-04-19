@@ -27,8 +27,8 @@ export function SectionHero() {
   ];
 
   return (
-    <section className="h-[704px] w-full bg-white bg-cover bg-center bg-no-repeat">
-      <div className="mx-auto flex w-full  max-w-[1246px] flex-wrap items-center justify-between px-[15px]">
+    <section className="flex h-full w-full bg-white bg-cover bg-center bg-no-repeat">
+      <div className="mx-auto flex max-w-[1246px] flex-wrap items-center justify-between px-[15px]">
         <div className="p-5">
           <h1 className="w-max p-1 text-7xl font-bold text-black">
             Professional
@@ -38,7 +38,7 @@ export function SectionHero() {
           </h1>
           <h1 className="text-7xl font-bold text-black">For Your Needs</h1>
           <div className="pt-6">
-            <p className="max-w-lg text-base text-[#141414]">
+            <p className="max-w-lg text-base font-semibold text-[#141414]">
               We are a modeling and casting agency, a leader in career
               management with a focus on fashion and advertising. We operate in
               the national and international markets, providing guidance on
