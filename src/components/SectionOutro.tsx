@@ -4,8 +4,6 @@ import {
   TwitterLogoIcon,
   ArrowTopRightIcon,
 } from '@radix-ui/react-icons';
-import { Plus } from 'lucide-react';
-import Image from 'next/image';
 import { Button } from './ui/button';
 import Link from 'next/link';
 
@@ -21,14 +19,14 @@ export function SectionOutro() {
       <div className="flex items-center justify-center p-5">
         <p className="flex justify-between gap-1">
           <InstagramLogoIcon className="mt-1" />
-          <Link href="https://www.instagram.com/studiomodels_oficial/">
+          <Link target="_blank" href="https://www.instagram.com/studiomodels_oficial/" rel="noopener norefferer">
             Instagram
           </Link>
         </p>
         <PlusIcon className="mx-5" />
         <p className="flex justify-between gap-1">
           <TwitterLogoIcon className="mt-1" />
-          <Link href="https://www.instagram.com/studiomodels_oficial/">
+          <Link target="_blank" href="https://www.instagram.com/studiomodels_oficial/" rel="noopener norefferer">
             Twitter
           </Link>
         </p>
@@ -36,7 +34,7 @@ export function SectionOutro() {
       <div className="relative">
         <div className="absolute inset-0 flex items-center justify-center">
           <Button className="rounded-full  p-3 text-2xl font-bold text-[#141414] transition-transform duration-300 ease-in-out hover:scale-110">
-            Contact Us
+            <Link target="_blank" href="https://www.instagram.com/studiomodels_oficial/" rel="noopener norefferer">Contact Us</Link>
             <ArrowTopRightIcon className=" ml-2 h-4 w-4 rounded-full" />
           </Button>
         </div>

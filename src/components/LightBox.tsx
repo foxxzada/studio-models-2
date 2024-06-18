@@ -9,6 +9,7 @@ interface ImageProps {
   details: {
     age: string;
     height: string;
+    path: string;
     category: string;
   };
 }
@@ -21,6 +22,7 @@ const images: ImageProps[] = [
     details: {
       age: '25',
       height: '1.75',
+      path: '/models',
       category: 'Models',
     },
   },
@@ -31,6 +33,7 @@ const images: ImageProps[] = [
     details: {
       age: '25',
       height: '1.75',
+      path: '/models',
       category: 'Models',
     },
   },
@@ -41,6 +44,7 @@ const images: ImageProps[] = [
     details: {
       age: '25',
       height: '1.75',
+      path: '/models',
       category: 'Models',
     },
   },
@@ -51,6 +55,7 @@ const images: ImageProps[] = [
     details: {
       age: '25',
       height: '1.75',
+      path: '/models',
       category: 'Cast',
     },
   },
@@ -61,6 +66,7 @@ const images: ImageProps[] = [
     details: {
       age: '25',
       height: '1.75',
+      path: '/models',
       category: 'Cast',
     },
   },
@@ -71,6 +77,7 @@ const images: ImageProps[] = [
     details: {
       age: '25',
       height: '1.75',
+      path: '/models',
       category: 'Cast',
     },
   },

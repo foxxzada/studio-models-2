@@ -2,6 +2,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 import CarouselModel from './CarouselModel';
 import LogoSlider from './LogoSlider';
+import Link from 'next/link';
+
 
 export function SectionHero() {
   const images = [
@@ -48,7 +50,7 @@ export function SectionHero() {
           </div>
           <div className="pt-6">
             <Button className="rounded-full bg-[#141414] p-3 text-2xl font-bold text-white transition-transform duration-300 ease-in-out hover:scale-110">
-              Explore Talent
+              <Link href="/models">Explore Talent</Link>
               <ArrowTopRightIcon className=" ml-2 h-4 w-4 rounded-full" />
             </Button>
           </div>

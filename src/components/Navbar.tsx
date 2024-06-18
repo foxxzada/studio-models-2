@@ -11,7 +11,7 @@ export default function Navbar() {
     { title: 'Home', path: '/' },
     { title: 'Models', path: '/models' },
     { title: 'Cast', path: '/models' }, // Create cast page and change this path to '/cast'
-    { title: 'Contact Us', path: '/' }, // create contact us page and change this path to '/contact-us'
+    { title: 'Contact Us', path: 'https://instagram.com/studiomodels_oficial/' }, // create contact us page and change this path to '/contact-us'
   ];
 
   return (
